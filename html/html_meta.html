@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <!--encoding type-->
+  <meta charset="utf-8">
+
+  <!--web page description -->
+  <meta name="description" content="html 연습 블로그">
+
+  <!--web page keyword : may be used in search engine -->
+  <meta name="keywords" content="코딩, html, portfolio 연습">
+
+  <!-- author of webpage -->
+  <meta name="author" content="js">
+
+  <!-- refresh page for every 30s -->
+  <meta http-equiv="refresh" content="30">
+
+  <!-- Match Size according to width of device : Cellphone -->
+  <!-- Initial Scale is zoom -->
+  <meta name="viewport" content="width=device-width, initial-scale=2.0">
+<style media="screen">
+  article {
+    border-style: solid;
+    border-color: black;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>This is practing for HTML </h1>
+</header>
+<nav>
+  <ul>
+    <li>chap1. Introduction</li>
+    <li>chap2. Basic Syntax</li>
+  </ul>
+</nav>
+<section>
+  <article class="">
+    <p>content block - 1 </p>
+    <!-- 다른 웹페이지를 삽입할 수 있다. 보안에 취약 -->
+    <!-- 문제는 다른 웹페이지에 있었던 코드들이 실행될 수 있다 -->
+    <!-- sandbox(attribute): js 와 같은 위험한 것들은 원척척으로 차단-->
+    <iframe src="http://opentutorials.org" width="300" height="100"></iframe>
+
+  </article>
+  <article class="">
+    <p> content block - 2 </p>
+    <video width="400" controls src="videofile.ogg" autoplay poster="posterimage.jpg">
+    </video>
+  </article>
+  <article class="form practice">
+    <!-- auto complete attribute : for every elements in child -->
+    <form  action="index.html" method="post" autocomplete="on">
+      <!--auto focus : 마우스 커서가 자동으로 focus -->
+      <input type="text" name="" value="" placeholder="type id" autofocus>
+      <!-- auto complete off for password -->
+      <input type="password" name="" value="" autocomplete="off" placeholder="type password">
+      <!-- reg expression을 사용해서 input을 조절할 수 있음 -->
+      <input type="email" name="" required pattern="[a-zA-z].+@[a-zA-z].com">
+    </form>
+  </article>
+</section>
+<footer>
+  contact me ^^
+</footer>
+</body>

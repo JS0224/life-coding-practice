@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS practice</title>
+    <style>
+      h1 {
+        color:red;
+        /* 2 declaration 사이에 ';' 필요 */
+        text-decoration:underline
+        /* 1줄은 declaration, 각각 property and value */
+      }
+
+      ul li {
+        /* ul이 부모인 li에 대해서 적용 */
+        color:blue
+      }
+
+      #ol>li {
+        /* color 는 상속됨, border 는 안됨 */
+        border: 1px solid black;
+        color: orange;
+      }
+
+      /*가상 클래스 선택자. element의
+      상태에 따라 마치 class 처럼 움직임
+      선택자의 순서는 중요한데, 이는 잘못하면 마지막 것만 작동되기 때문
+      */
+      a:hover {
+        color:yellow;
+      }
+
+      a:active {
+        color:green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <ul>
+      <a>html</a>
+      <li>css</li>
+      <li>Jvascript</li>
+    </ul>
+    <ol id="ol">
+      <li>html</li>
+      <li>CSS
+        <ol>
+          <li>concept</li>
+          <li>summary</li>
+        </ol>
+      </li>
+      <li>js</li>
+    </ol>
+  </body>
+</html>

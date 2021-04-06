@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--Document type declaration. Tag가 어떤 표준을 따르고 있는지 알려주기 위해
+시간이 지남에 따라 버전이 바뀌기 때문. 위는 html5를 위한 것-->
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    h4 {
+      border-top: black 1px solid;
+    };
+  </style>
+</head>
+<body>
+  <form action="https://localhost/login.php">
+
+      <h4>Text</h4>
+      <p>id : <input type="text" name="id"></p>
+      <input type ="submit">
+
+    <h4>Scroll select Only One</h4>
+    <select name="color">
+      <option value="red">붉은색</option>
+      <option value="black">검은색</option>
+      <option value="blue">파란색</option>
+    </select>
+
+    <h4>Scroll select Multiple (WITH Ctrl key)</h4>
+    <select name="color" multiple>
+      <option value="red">붉은색</option>
+      <option value="black">검은색</option>
+      <option value="blue">파란색</option>
+    </select>
+
+    <h4>Radio : Single</h4>
+    붉은색 : <input type="radio" name="color" value="red">
+    검은색 : <input type="radio" name="color" value="black" checked>
+    파란색 : <input type="radio" name="color" value="blue">
+
+    <h4>CheckBox : Multiple choice</h4>
+    95 : <input type="checkbox" name="size" value="95">
+    100 : <input type="checkbox" name="size" value="100" checked>
+    105 : <input type="checkbox" name="size" value="105" checked>
+
+    <h4>Input Type</h4>
+    <input type="text">
+    <input type="submit" value="submit">
+    <input type="button" value="button" onclick="alert('hello world')">
+    <input type="reset">
+
+    <h4>Hidden Type</h4>
+    <!-- 보이지는 않지만 값을 보내야 하는 경우가 있음-->
+    <input type="hidden" name="hide" value="pw486">
+
+    <h4>Label 의 활용</h4>
+    <!--input의 id 를 for attirubte 로 가지고 있는 label 을 누르면,
+        해당 input으로 커서가 움직인다-->
+    <p>
+      <label for="id_txt">Text1</label>
+      <input id="id_txt" type="text" name="id_txt" value="default value">
+    </p>
+    <p>
+      <!--lazy version-->
+      <label>Text2
+        <input type="text" name="id_txt" value="default value">
+      </label>
+    </p>
+
+    <h4>File 선택(local)</h4>
+    <!-- 파일이 들어가면 아래 method, enctype을 꼭 써줘야함-->
+    <!--form action= "!~~~~!" method="post" enctype="multipart/form-data"-->
+    <label>file choose
+      <input type="file" name="file">
+    </label>
+  </form>
+</body>
