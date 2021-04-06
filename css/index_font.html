@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Font practice</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+      div {
+        border: 1px solid black;
+      }
+      .px {
+        font-size:16px;
+      }
+
+      .rem {
+        font-size:1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      px : 고정
+      em, rem : 사용자가 브라우저에 변화를 주면 바뀜
+      요즘은 rem!
+    </p>
+    <div class="px">
+      this is px
+    </div>
+    <div class="rem">
+      this is rem
+    </div>
+    <div class="color">
+      There are 3ways to determine color
+      <h5 style="color:blue"> With name ex) color:blue </h5>
+      <h5 style="color:#1278a2"> With #  ex) color:#1278a2 </h5>
+      <h5 style="color:rgb(234,32,123)"> With RGN ex) color:rgb(234,32,123)</h5>
+    </div>
+    <div>
+      Text Alignment
+      <h5 style="text-align:left"> LEFT </h5>
+      <h5 style="text-align:center"> CENTER </h5>
+      <h5 style="text-align:right"> RIGHT</h5>
+      <p style="text-align:justify">
+        Justify : 양쪽 균등하게
+        글자 사이의 간격이 가변적으로 바뀜. <br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div>
+      font-family에 여러 속성을 넣으면, 앞에것 부터 시도. 컴퓨터에 있는 폰트가 걸리는대로 적용
+      <h5 style="font-family: Times New Roman"> font-family:Times new Roman</h5>
+      <h5 style="font-weight: bold"> font-weight: bold</h5>
+      <h5 style="line-height: 2.0">
+        행과 행 사이의 간격 <br />
+        line-height: 2.0
+      </h5>
+      <h5 style="font: 15px arial, sans-serif">
+        한번에 속성 넣기<br />
+        font: 15px arial, sans-serif <br/>
+        font-size, font-family는 필수로 포함되어야 하는 정보
+      </h5>
+    </div>
+    <div>
+      서체의 종류
+      <p>
+        고정폭(monospaced)과 가변폭 <br />
+        고정폭의 경우 모든 글자의 너비가 같고, 가변폭은 다르다
+      </p>
+      <p>
+        serif : 글꼴에서 사용하는 꾸밈(궁서체 스타일)
+        sans-serif : 꾸밈글씨 아님(고딕 스타일)
+      </p>
+    </div>
+    <div>
+      웹폰트 : 사용자가 폰트를 다운받지 않고, 웹에서 끌어올 수 있게 함 <br/>
+      Google Fonts: 구글엣 제공하는 무료 웹폰트 서비스
+      <h5 style="font-family: Nanum Pen Script, cursive">
+        이런 예쁜 글을 만들 수 있다.
+      </h5>
+      내가 이미 가지고 있는 폰트 파일을 사용해서 웹폰트를 만들수도 있다(web font generator)
+    </div>
+
+  </body>
+</html>
