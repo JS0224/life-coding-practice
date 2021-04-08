@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div {
+        border:10px solid black;
+        margin:10px;
+        padding:5px;
+      }
+      .other {
+
+      }
+      .parent {
+
+      }
+      .me {
+        position:relative;
+        left:100px;
+      }
+      .absolute-box {
+        position:absolute;
+        top:300px;
+        background-color:blue;
+        color:white;
+      }
+      .fixed-box {
+        position:fixed;
+        top:0;
+        left:600px;
+        background-color:yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="other">
+      other
+    </div>
+    <div class="parent">
+      parent
+      <div class="me">
+        <h3>position:relative</h3>
+        me : (position:relative, left 100px) <br>
+        css default position : static <br>
+        정적으로 위치 설정. left, right 등의 속성 다 무시 <br>
+        position:relative -> 그러면 offset(left, right  등 사용 가능) <br>
+        기준이 부모
+      </div>
+    </div>
+    <div style="position:relative">
+      <h3>position : absolute</h3>
+      Grand
+      <div class="">
+          parent
+          <div class="absolute-box">
+            absolute-box : 기준이 position이 static이 아닌 가장 빠른 부모 <br>
+            position을 absolute로 하는 순간 부모 자식 관계가 끊김 <br>
+            즉, width 같은 것들도 상속 불가능 <br>
+            현재 이 박스는 grand에서 300px 떨어짐.
+          </div>
+      </div>
+    </div>
+    <div>
+      <h3>position : fixed</h3>
+      스크롤과 상관없이 그대로 유지 <br>
+      부모가 없기 때문에, 크기를 알아서 가져야 한다.
+      <div class="fixed-box">
+        fixed
+      </div>
+    </div>
+  </body>
+</html>
