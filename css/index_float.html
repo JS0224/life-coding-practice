@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Float practice</title>
+    <style>
+      * {
+        box-sizing:border-box;
+      }
+      img {
+        width:300px;
+        float:left;
+        margin-right:20px;
+      }
+      p {
+        text-align:justify;
+      }
+      header {
+        border-bottom: 1px solid gray;
+      }
+      .container {
+        width:700px;
+        background-color:pink;
+      }
+      nav {
+        float:left;
+        width:100px;
+        border-right: 1px solid gray;
+      }
+      article {
+        float:left;
+        width:500px;
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+        margin-left:-1px;
+        margin-right:-0.5px;
+      }
+      aside {
+        float:left;
+        border-left: 1px solid gray;
+        width:100px;
+      }
+      footer {
+        clear:both;
+        border-top: 1px solid gray;
+        padding:20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <h3>Float</h3>
+      <img src="../res/image.jpg" alt="">
+      <p>
+        <h5>삽화 이미지를 넣을 때 많이 쓰인다. </h5>
+        Lorem ipsum dolor sit amet, Reiciendis veniam totam labore ipsum, nesciunt temporibus repudiandae facilis earum, sunt autem illum quam dolore, quae optio nemo vero quidem animi tempore aliquam voluptas
+      </p>
+      <p style="clear:both">
+         <h5> style="clear:both" </h5>
+         <h5> clear 속성은 float 를 어떻게든 피하려고 할 때 적용 </h5>
+         fugiat sed, saepe quaerat recusandae exercitationem sapiente, impedit nostrum error. Doloremque impedit, eos in quos assumenda illo eum dicta. Voluptatum quaerat excepturi consectetur, doloremque esse deleniti commodi natus, maxime sit? Officia rerum quibusdam porro dolorum numquam harum soluta ex quo! Vero, nam? Necessitatibus rem hic perferendis maiores obcaecati voluptate sunt autem id doloribus, similique repudiandae nesciunt vel facere ex accusantium ipsum provident iste itaque?.
+      </p>
+    </div>
+    <div class="container">
+      <header>
+          <h5>Float Holy Grail</h5>
+      </header>
+      <nav>
+        <ul>
+          <li>position</li>
+          <li>float</li>
+          <li>flex</li>
+        </ul>
+      </nav>
+      <article class="">
+          <h4>Float conetnt</h4>
+          nav - 오른쪽 border <br />
+          article - 왼쪽 border <br />
+          article - marginLeft(-1px) 이렇게 넣으면 끝 (줄이 안 겹침) <br />
+          float 는 공간이 없으면 자동으로 내려감 <br />
+          그래서 container 사이즈를 fix! <br />
+
+          하지만 flex를 쓰자...
+      </article>
+      <aside class="">
+        this is add
+      </aside>
+      <footer>
+        footer 는 자유로워졌어요. style="clear:both"
+      </footer>
+    </div>
+  </body>
+</html>
