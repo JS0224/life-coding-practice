@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blend pracitce</title>
+    <style>
+      .blend {
+        height:400px;
+        border:5px solid;
+        background-color:orange;
+        background-size:cover;
+        background-image:url('../res/image.jpg');
+        background-blend-mode:color;
+        transition:background-color 10s;
+      }
+      .blend:hover {
+        background-color:green;
+        transition:background-color 5s;
+      }
+      .back {
+        background-size: cover;
+        background-image:url('../res/image.jpg');
+      }
+      .content-blend {
+        font-size:2rem;
+        color:blue;
+        mix-blend-mode:screen;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h4> background-blend-mode </h4>
+    try hover on image (transition is applied)
+    <div class="blend">
+    </div>
+    <h4>mix-blend-mode : mix with parent</h4>
+    <div class="back">
+      <div class="content-blend">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </div>
+    </div>
+  </body>
+</html>
