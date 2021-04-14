@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Transition Practice</title>
+    <style>
+        div {
+          border: 1px solid black;
+        }
+         a {
+           font-size:3rem;
+           display:inline-block;
+           transition-property:all;
+           transition-duration: 2s;
+         }
+         a:active{
+           transform:translate(20px, 20px);
+         }
+    </style>
+  </head>
+  <body>
+    <h4>Transition</h4>
+    <div class="">
+      Use : 부드러운 장면전환
+    </div>
+    <div class="">
+      <a href="#">Click Me</a> <br>
+      transition-property : 누구에게 효과를 줄 것인가? <br>
+      transition-duration : transition이 일어나는 기간 <br>
+      == transition: all 1s <br>
+    </div>
+    <div class="">
+      속도와 관련된 lib <a href="https://matthewlein.com/tools/ceaser">link</a>
+    </div>
+  </body>
+</html>
