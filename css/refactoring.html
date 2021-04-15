@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Refactoring</title>
+    <style>
+      div {
+        border:1px solid;
+      }
+      h5 {
+        border-top:1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <h4>Link and Import</h4>
+      <h5>Link</h5>
+      Link : &ltlink rel="stylesheet" href="/css/master.css&gt <br>
+      로드가 한번만 돼서, 여러번 네트워크를 통해 다운 받지 않음 <br>
+      html 에서 css 파일을 로드할 때
+
+      <h5>Import</h5>
+      style tag 안에 씀 <br>
+      @import url("style.css")
+      css에서 다른 css 파일을 로드할 때
+    </div>
+    <div class="">
+      <h4>Minify</h4>
+      용량이 커질 때 스페이스, 엔터 등의 사소한 문자열등을 없에줌 <br>
+      접속자가 많지 않으면 별 상관 없음
+    </div>
+    <div class="">
+      <h4>Preprocessor</h4>
+      <h5>Background</h5>
+      css 문법의 한계를 느껴서, css를 생성해주는 compiler를 만듦 <br>
+      jade가 html을 대체하려고 한 것이 좋은 예. <br>
+      css에도 그런 도구들이 있다 <br>
+      <h5>site</h5>
+      <a href="http://stylus-lang.com/ ">stylus</a> <br>
+      <a href="https://csspre.com/compile/">도구 비교 사이트</a>
+    </div>
+  </body>
+</html>
